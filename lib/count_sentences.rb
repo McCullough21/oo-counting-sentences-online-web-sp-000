@@ -14,8 +14,9 @@ class String
   self.end_with?("!")
   end
 require 'pry'
-  def count_sentences
-     self.split.strip
+thing = "This, well, is a sentence. This is too!! And so is this, I think? Woo..."
+  def count_sentences(string)
+     thing.split.strip
   end
 binding.pry
 end

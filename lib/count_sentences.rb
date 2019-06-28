@@ -17,7 +17,7 @@ require 'pry'
 # thing = "This, well, is a sentence. This is too!! And so is this, I think? Woo..."
 delimiters = [". ", "! ", "? "]
   def count_sentences
-    self.split(Regexp.union(delimiters))
+    self.split(Regexp.union(delimiters)).count
   end
 binding.pry
 end

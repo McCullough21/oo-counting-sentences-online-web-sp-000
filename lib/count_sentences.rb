@@ -13,8 +13,9 @@ class String
   def exclamation?
   self.end_with?("!")
   end
-
+require 'pry'
   def count_sentences
      self.split.strip
   end
+binding.pry
 end

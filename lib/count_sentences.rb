@@ -18,7 +18,7 @@ require 'pry'
 delimiters = [". ", "! ", "? "]
   def count_sentences
     delimiters = [". ", "! ", "? "]
-    self.split(Regexp.union(delimiters)).count
+    self.split(". ", "! ", "? ").count
   end
 # binding.pry
 end

@@ -14,11 +14,10 @@ class String
   self.end_with?("!")
   end
 require 'pry'
-thing = "This, well, is a sentence. This is too!! And so is this, I think? Woo..."
+# thing = "This, well, is a sentence. This is too!! And so is this, I think? Woo..."
 delimiters = [". ", "! ", "? "]
   def count_sentences
-    sentences = []
-     sentences << self.split(Regexp.union(delimiters))
+    sentences = self.split(Regexp.union(delimiters))
     sentences.count
   end
 binding.pry

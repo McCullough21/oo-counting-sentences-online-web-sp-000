@@ -15,7 +15,7 @@ class String
   end
 require 'pry'
 thing = "This, well, is a sentence. This is too!! And so is this, I think? Woo..."
-delimiters = [".", "!", "?"]
+delimiters = [". ", "! ", "? "]
   def count_sentences
      string.split(delimiters)
   end

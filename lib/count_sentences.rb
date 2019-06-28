@@ -16,7 +16,7 @@ class String
 require 'pry'
 thing = "This, well, is a sentence. This is too!! And so is this, I think? Woo..."
   def count_sentences(string)
-     "#{thing}".split.strip
+     string.split.strip
   end
 binding.pry
 end

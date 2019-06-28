@@ -19,5 +19,5 @@ delimiters = [". ", "! ", "? "]
   def count_sentences
     self.split(Regexp.union(delimiters)).count
   end
-binding.pry
+# binding.pry
 end
